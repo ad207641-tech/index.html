@@ -1,45 +1,38 @@
-# Indexx.html
-/css-images-assignment
-│── index.html
-│── butterfly.jpg
-│── dinosaur.png
-│── football_field.jpg
-│── tic-tac-toe.png
-│── penguins.jpg
-│── seagull.png
-│── theater_stage.jpg
+# Indexx.htmll
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSS3 Image Manipulation</title>
+  <title>CSS3 Image Effects Assignment</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background-color: #f2f2f2;
       padding: 30px;
     }
 
     h1 {
       text-align: center;
+      margin-bottom: 40px;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
     }
 
     figure {
-      background: white;
+      background: #fff;
       padding: 15px;
       text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     figure img {
-      max-width: 100%;
+      width: 100%;
+      height: auto;
     }
 
     figcaption {
@@ -47,18 +40,18 @@
       font-weight: bold;
     }
 
-    /* 1. Butterfly – drop shadow + rotation */
+    /* 1. Butterfly */
     .butterfly {
       filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
       transform: rotate(-5deg);
     }
 
-    /* 2. Dinosaur – grayscale + blur */
+    /* 2. Dinosaur */
     .dinosaur {
       filter: grayscale(100%) blur(2px);
     }
 
-    /* 3. Penguins – vignette using gradient overlay */
+    /* 3. Penguins – vignette */
     .penguins {
       position: relative;
     }
@@ -67,16 +60,16 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.6));
+      background: radial-gradient(circle, transparent 45%, rgba(0,0,0,0.6));
       pointer-events: none;
     }
 
-    /* 4. Seagull – sepia + contrast */
+    /* 4. Seagull */
     .seagull {
       filter: sepia(80%) contrast(140%);
     }
 
-    /* 5. Theater Stage – spotlight effect */
+    /* 5. Theater stage spotlight */
     .stage {
       position: relative;
     }
@@ -85,23 +78,23 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.85));
+      background: radial-gradient(circle, transparent 30%, rgba(0,0,0,0.85));
     }
 
-    /* 6. Football field – layered images */
+    /* 6. Football field – multiple backgrounds */
     .field {
       width: 100%;
-      height: 200px;
+      height: 220px;
       background:
-        url("tic-tac-toe.png") center/200px no-repeat,
+        url("tic-tac-toe.png") center/180px no-repeat,
         url("football_field.jpg") center/cover no-repeat;
-      border: 6px solid white;
       box-shadow: inset 0 0 20px rgba(0,0,0,0.7);
     }
   </style>
 </head>
 
 <body>
+
   <h1>CSS3 Image Effects Assignment</h1>
 
   <section class="gallery">
@@ -137,5 +130,6 @@
     </figure>
 
   </section>
+
 </body>
 </html>
