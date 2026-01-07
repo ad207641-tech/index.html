@@ -1,11 +1,21 @@
-# index.htmll
+# index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>CSS3 Image Effects Assignment</title>
 
-  <style>
+ ad207641-tech.github.io
+ └── imanation1
+     ├── index.html
+     ├── penguins.jpg
+     ├── football.jpg
+     ├── overlay.png
+     ├── dinosaur.png
+     ├── seagull.jpg
+     ├── butterfly.jpg
+     └── presentation.jpg
+ <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
